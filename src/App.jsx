@@ -1,20 +1,25 @@
-import data from "./data.json"
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Detail from "./pages/movieDetail";
+import Favorites from "./pages/favorites"
+import Header from "./components/header";
+import AllMovies from "./pages/allMovies";
+import Search from "./pages/movieDetail"
 
 function App() {
-  
+
     return (
-      <div className="bg-secondary-100 ">
-        {
-          data? data.map((movies)=>(
-            <div className="">
-            <img className="rounded-lg h-15 w-10" src={movies.thumbnail} alt="" />
-            <h1 className="font-bold">{movies.title}</h1>
-            <h2>{movies.genre}</h2>
-            <p>{movies.description}</p>
-            </div>
-          )):null
-        } </div>
-      
+      <div>
+        <Header/>
+        <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/detail/:id" element={<Detail/>}/>
+        <Route exact path="/favorites" element={<Favorites/>}/>
+        <Route exact path="/allMovies" element={<AllMovies/>}/>
+        <Route exact path="/moviesSearch/:id" element={<Search/>}/>
+        </Routes>
+        
+      </div>
     )
   }
 

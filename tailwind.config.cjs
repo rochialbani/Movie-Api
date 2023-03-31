@@ -11,9 +11,10 @@ module.exports = {
         secondary: {
           100: "#1E1F25",
           900: "#131517"
-        }
+        },
+        tertiary: "#0B0F29",
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true }),],
 }

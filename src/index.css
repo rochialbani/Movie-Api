@@ -1,31 +1,23 @@
 @tailwind base;
-
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary) var(--primary);
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 8px;
-    height: 5px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: #1E1F25;
-    border-radius: 5px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color:#131517;
-    border-radius: 14px;
-    border: 3px solid var(--primary);
-  }
-
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+}
+
+.hoveres{
+  @apply hidden
+}
+
+.hovered:hover .hoveres {
+  @apply flex flex-col justify-center items-center
+}
+
+li {
+  @apply cursor-pointer
+}
+
+.linear-bg{
+  background: linear-gradient(269.82deg, #07091c00 0.17%, #080a1ad6 99.87%);
 }
