@@ -1,4 +1,4 @@
-import { GET_ALL_MOVIES, GET_MOVIE_DETAIL, CLEAR, SEARCH_MOVIE, GET_FAVORITE_MOVIE, REMUVE_FAVORITE_MOVIE } from "./actions";
+import { GET_ALL_MOVIES, GET_MOVIE_DETAIL, CLEAR, GET_FAVORITE_MOVIE, REMUVE_FAVORITE_MOVIE } from "./actions";
 
 const initialState={
     allMovies: [],
@@ -24,11 +24,11 @@ const rootReducer = (state = initialState, action) =>{
                 ...state,
                 movieDetail: {}
             }
-        case SEARCH_MOVIE:
+        {/*case SEARCH_MOVIE:
             return{
                 ...state,
                 movies: action.payload
-            }
+            }*/}
         case GET_FAVORITE_MOVIE:
             return{
                 ...state,

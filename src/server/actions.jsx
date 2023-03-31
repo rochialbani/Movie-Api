@@ -2,7 +2,7 @@ const { API_KEY } = process.env;
 export const GET_ALL_MOVIES = "GET_ALL_MOVIES";
 export const GET_MOVIE_DETAIL = "GET_MOVIE_DETAIL";
 export const CLEAR= 'CLEAR';
-export const SEARCH_MOVIE='SEARCH_MOVIE';
+//export const SEARCH_MOVIE='SEARCH_MOVIE';
 export const GET_FAVORITE_MOVIE='GET_FAVORITE_MOVIE';
 export const REMUVE_FAVORITE_MOVIE= 'REMUVE_FAVORITE_MOVIE'
 
@@ -51,10 +51,10 @@ export const clear = () => {
     return { type: CLEAR}
 }
 
-export function search(id){
+/*export function search(query){
     return async function(dispatch){
         try{
-            fetch(`https://imdb-top-100-movies.p.rapidapi.com/${id}`, options)
+            fetch(`https://imdb-top-100-movies.p.rapidapi.com/${query}`, options)
 	        .then(response => response.json())
 	        .then(response => dispatch({type: SEARCH_MOVIE, payload:response}))
 	        
@@ -67,7 +67,7 @@ export function search(id){
 
 
 
-/*export function search(title){
+export function search(title){
    return{
     type: SEARCH_MOVIE, payload: title
    }

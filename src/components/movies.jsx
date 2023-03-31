@@ -4,6 +4,7 @@ import { getAllMovies, getFavoriteMovie } from '../server/actions'
 import { FaHeart } from 'react-icons/fa'
 
 
+
 function Movies({id, title, imdbid, image}) {
   const dispatch = useDispatch() 
 

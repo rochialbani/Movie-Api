@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SearchBar from "./searchBar";
+//import SearchBar from "./searchBar";
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
           <Link to='/' className="ml-10 text-sm text-gray-300 uppercase">Home</Link>
           <Link to='/allMovies' className="ml-10 text-sm text-gray-300 uppercase">Movies</Link>
           <Link to='/favorites' className="ml-10 text-sm text-gray-300 uppercase">Favorites</Link>
-          <SearchBar/>  
+          {/*<SearchBar/>*/}  
       </div>
       
     </header>

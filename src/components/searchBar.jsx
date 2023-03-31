@@ -1,4 +1,4 @@
-import { RiSearchLine} from "react-icons/ri";
+/*import { RiSearchLine} from "react-icons/ri";
 import { search } from "../server/actions";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -39,9 +39,9 @@ function SearchBar() {
             return (
               <div key={m.imdbid}>{m.title}</div>
             )})
-            */}
+            }
     </div>
   )
 }
 
-export default SearchBar
+export default SearchBar*/

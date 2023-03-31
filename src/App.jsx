@@ -4,7 +4,7 @@ import Detail from "./pages/movieDetail";
 import Favorites from "./pages/favorites"
 import Header from "./components/header";
 import AllMovies from "./pages/allMovies";
-import Search from "./components/searchBar"
+//import Search from "./components/searchBar"
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/detail/:id" element={<Detail/>}/>
         <Route exact path="/favorites" element={<Favorites/>}/>
         <Route exact path="/allMovies" element={<AllMovies/>}/>
-        <Route exact path="/searchBar/:query" element={<Search/>}/>
+        {/*<Route exact path="/searchBar/:query" element={<Search/>}/>*/}
         </Routes>
         
       </div>
